@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: demo
+cassandra:
+  default:
+    advanced:
+      metadata:
+        schema:
+          enabled: false
+    basic:
+      contact-points:
+        - "127.0.0.1:9042"
+      load-balancing-policy:
+        local-datacenter: datacenter1
+secretkeyid: test
+greeting:
+  message: "hello world"
